@@ -45,7 +45,13 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
       <Section title='About'>
         <p class='text-muted-foreground'>Developer / Designer</p>
-        <p class='text-muted-foreground'>想不出个性签名</p>
+        <p class='text-muted-foreground'>
+          “Each man had only one genuine vocation - to find the way to himself....His task was to
+          discover his own destiny - not an arbitrary one - and to live it out wholly and resolutely
+          within himself. Everything else was only a would-be existence, an attempt at evasion, a
+          flight back to the ideals of the masses, conformity and fear of one's own inwardness.”<br
+          /> ― Herman Hesse
+        </p>
         <Button title='More about me' class='w-fit self-end' href='/about' variant='ahead' />
       </Section>
       {
@@ -93,12 +99,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     </Section> */
       }
       <Section title='Education'>
-        <Card
-          as='a'
-          heading='UESTC'
-          subheading='Lorem ipsum dolor sit amet, vidit suscipit at mei.'
-          date='September 2024 - '
-        >
+        <Card as='a' heading='UESTC' subheading='电子科技大学' date='September 2024 - '>
           {
             /* <ul class='ms-4 list-disc text-muted-foreground'>
           <li>
