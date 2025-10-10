@@ -32,7 +32,7 @@ heroImage: { src: './thumbnail.jpg', color: '#ece5e6ff' }
 
 
 
-![](D:\a_writeup\随笔\照片\微信图片_20250929051027.jpg)
+![](./thumbnail.jpg)
 
 
 
