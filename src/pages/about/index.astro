@@ -4,30 +4,17 @@ import PageLayout from '@/layouts/CommonPage.astro'
 import Substats from '@/components/about/Substats.astro'
 
 const headings = [
-  { depth: 2, slug: 'hobbies', text: 'Hobbies' },
   { depth: 2, slug: 'social', text: 'Social' },
-  { depth: 2, slug: 'motto', text: 'Motto' },
   { depth: 2, slug: 'about-blog', text: 'About Blog' }
 ]
 ---
 
 <PageLayout title='About' {headings} comment>
   <p>Developer / Designer</p>
-  <p>你好， 我是zenus10, 你也可以叫我z10!很高兴认识你^•𐃷•^ฅ</p>
-
-  {/* general-talk */}
-  <h2 id='hobbies'>Hobbies</h2>
-  <p>仅仅个人娱乐，远谈不上专业者 ^_ ̫ _ ̥`</p>
-  <ul>
-    <li>画画 ( <Spoiler> 画画稿子还有同人什么的 </Spoiler> )</li>
-    <li>摄影 ( <Spoiler> 拍拍自己还有日常什么的 </Spoiler> )</li>
-    <li>文学 ( <Spoiler> 看看杂书还有写点东西什么的 </Spoiler> )</li>
-    <li>and more...</li>
-  </ul>
+  <p>你好， 我是zenus10, 你也可以叫我z10,很高兴认识你!</p>
 
   {/* social-networks */}
   <h2 id='social'>Social</h2>
-  <p>我的社交平台，欢迎来找我玩 ᯠ_ ̫ _ ᯄ ੭</p>
   <Substats
     stats={[
       {
@@ -47,28 +34,13 @@ const headings = [
     ]}
   />
 
-  {/* gossips */}
-  <h2 id='motto'>Motto</h2>
-  <p>不定期更新喜欢的句子 ᶻz ₍^_   ̫ _^₎</p>
-  <Collapse title='My motto'>
-    “Each man had only one genuine vocation - to find the way to himself....His task was to discover
-    his own destiny - not an arbitrary one - and to live it out wholly and resolutely within
-    himself. Everything else was only a would-be existence, an attempt at evasion, a flight back to
-    the ideals of the masses, conformity and fear of one's own inwardness.”<br /> ― Herman Hesse
-  </Collapse>
-
   {/* about-blog */}
   <h2 id='about-blog'>About Blog</h2>
   <ul>
     <li>
-      <h5>Set Up</h5><br
-      />创立一个属于我的个人博客的想法从出现开始到现在已经很久,中间也尝试过很多,不过都由于技术力或精力问题弃置了。记得有一天偶然间刷到astro这个框架,一下子就被pure这个主题吸引了,不论从外观和性能上都很优雅~于是又开始着手做了。
+      <h5>Content</h5><br /> 待补充。。。
     </li>
-
-    <li>
-      <h5>Content</h5><br />大概是把学习文章和一些随笔都po上来,(以及我那无处安放的乱七八糟的照片...
-    </li>
-
+    <br />
     <li>
       <h5>Wish</h5><br />希望我和我的小博客一起进步！
     </li>
