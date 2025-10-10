@@ -1,6 +1,6 @@
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
-// ✅ 正确导入 Netlify adapter
-import netlify from '@astrojs/netlify'
+// ✅ 静态模式不需要任何 adapter
+// import netlify from '@astrojs/netlify'
 // import vercel from '@astrojs/vercel'
 import AstroPureIntegration from 'astro-pure'
 import { defineConfig } from 'astro/config'
@@ -28,16 +28,10 @@ import config from './src/site.config.ts'
 export default defineConfig({
   // Top-Level Options
   site: 'https://zenus10.com', // 改为你的域名
-  // Deploy to a sub path; See https://astro-pure.js.org/docs/setup/deployment#platform-with-base-path
-  // base: '/astro-pure/',
   trailingSlash: 'never',
 
-  // Adapter
-  // https://docs.astro.build/en/guides/deploy/
-  // 使用 Netlify adapter
-  adapter: netlify(),
-  output: 'server',
-  // ---
+  // ✅ 静态模式 - 适合博客，不需要 adapter
+  output: 'static',
 
   image: {
     responsiveStyles: true,
@@ -47,26 +41,17 @@ export default defineConfig({
   },
 
   integrations: [
-    // astro-pure will automatically add sitemap, mdx & unocss
-    // sitemap(),
-    // mdx(),
     AstroPureIntegration(config)
-    // (await import('@playform/compress')).default({
-    //   SVG: false,
-    //   Exclude: ['index.*.js']
-    // }),
-
-    // Temporary fix vercel adapter
-    // static build method is not needed
   ],
-  // root: './my-project-directory',
 
   // Prefetch Options
   prefetch: true,
+
   // Server Options
   server: {
     host: true
   },
+
   // Markdown Options
   markdown: {
     remarkPlugins: [remarkMath],
@@ -82,7 +67,6 @@ export default defineConfig({
         }
       ]
     ],
-    // https://docs.astro.build/en/guides/syntax-highlighting/
     shikiConfig: {
       themes: {
         light: 'github-light',
@@ -98,15 +82,12 @@ export default defineConfig({
       ]
     }
   },
+
   experimental: {
     contentIntellisense: true
   },
+
   vite: {
-    plugins: [
-      //   visualizer({
-      //     emitFile: true,
-      //     filename: 'stats.html'
-      //   })
-    ]
+    plugins: []
   }
 })
