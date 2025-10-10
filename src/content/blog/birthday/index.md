@@ -6,6 +6,8 @@ tags:
   - 随笔
 language: 'Chinese'
 heroImage: { src: './thumbnail.jpg', color: '#ece5e6ff' }
+draft: false
+comment: false
 ---
 
 # 病树前头好东西
@@ -32,7 +34,7 @@ heroImage: { src: './thumbnail.jpg', color: '#ece5e6ff' }
 
 
 
-![](./thumbnail.jpg)
+![生日照片](./image.jpg)
 
 
 
