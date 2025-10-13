@@ -34,8 +34,4 @@ comment: false
 
 
 
-![生日照片](./image.jpg)
-
-
-
 写于2025.9.29
