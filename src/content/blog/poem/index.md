@@ -3,7 +3,7 @@ title: '海子'
 publishDate: 2024-10-10
 description: '当初面试记者团交上去的稿子，一直被拿来充作第一篇博客。。'
 tags:
-  - 随笔
+  - notes
 language: 'Chinese'
 heroImage: { src: './thumbnail.jpg', color: '#cdcdcdff' }
 draft: false
@@ -11,7 +11,7 @@ comment: false
 ---
 
 
-# ***海子 | 但诗歌本身以太阳必将胜利***
+
 
 我们谈到海子，就很难去规避他的死亡这个话题。
 

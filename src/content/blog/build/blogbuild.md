@@ -5,13 +5,13 @@ description: '采用Astro框架+Pure Theme，使用GitHub+Netlify部署的本站
 tags:
   - Blog
 language: 'Chinese'
-heroImage: { src: './thumbnail.jpg', color: '#cdcdcdff' }
+heroImage: { src: './thumbnail.jpg', color: '#003cffff' }
 draft: false
 comment: false
 ---
 
 
-# 基于astro和netlify的个人博客部署过程
+
 
 ## 1. 前言
 
@@ -35,7 +35,7 @@ comment: false
 
   2.[Nodejs](https://nodejs.org/):
 
-   最低支持版本为：`v18.20.8`、`v20.3.0` 和 `v22.0.0`。（注意：`v19` 和 `v21` 版本不受支持。）你可以通过``node -v``来检查
+   最低支持版本为：v18.20.8、v20.3.0 和 v22.0.0。（注意：v19 和 v21 版本不受支持。）你可以通过`node -v` 来检查
   
   3.npm / pnpm（本教程使用 `npm`）
 

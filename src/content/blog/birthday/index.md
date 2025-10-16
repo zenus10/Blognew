@@ -3,14 +3,14 @@ title: '病树前头好东西'
 publishDate: 2025-09-28
 description: '写于十九岁生日的一些感想'
 tags:
-  - 随笔
+  - memory
 language: 'Chinese'
 heroImage: { src: './thumbnail.jpg', color: '#ece5e6ff' }
 draft: false
 comment: false
 ---
 
-# 病树前头好东西
+
 
 单身的副作用特别像痛经，大半夜突如其来的侵扰人一下。我真是太久没单身了，可能也不算什么什么好事情什么好东西，对这滋味有种熟悉又陌生的感觉，很难回忆之前都是怎么习以为常的，很难想象回忆又是怎么淡化的。
 
